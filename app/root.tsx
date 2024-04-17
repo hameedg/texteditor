@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import styles from "~/styles/main.css?url";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -26,4 +27,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return <Outlet />;
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
 }

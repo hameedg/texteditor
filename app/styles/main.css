@@ -1,0 +1,21 @@
+.menu {
+    background-color: #E0FFFF;
+    border: none;
+    color: #008080;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Initial styles for the menu */
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popUp 0.5s forwards ease-in-out;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
